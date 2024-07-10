@@ -1,0 +1,52 @@
+exports.quadBuilder = {
+    PARENT: ["genericTank"],
+    LABEL: "Quad Builder",
+    DANGER: 7,
+    STAT_NAMES: statnames.trap,
+    BODY: {
+        SPEED: 0.8 * base.SPEED,
+        FOV: 1.15 * base.FOV,
+    },
+    GUNS: [
+        {
+            POSITION: [14, 6, 1, 0, 0, 45, 0],
+        },
+        {
+            POSITION: [2, 6, 1.1, 14, 0, 45, 0],
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.trap, g.block, g.weak]),
+                TYPE: "setTrap",
+            },
+        },
+        {
+            POSITION: [14, 6, 1, 0, 0, 135, 0],
+        },
+        {
+            POSITION: [2, 6, 1.1, 14, 0, 135, 0],
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.trap, g.block, g.weak]),
+                TYPE: "setTrap",
+            },
+        },
+        {
+            POSITION: [14, 6, 1, 0, 0, 225, 0],
+        },
+        {
+            POSITION: [2, 6, 1.1, 14, 0, 225, 0],
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.trap, g.block, g.weak]),
+                TYPE: "setTrap",
+            },
+        },
+        {
+            POSITION: [14, 6, 1, 0, 0, 315, 0],
+        },
+        {
+            POSITION: [2, 6, 1.1, 14, 0, 315, 0],
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.trap, g.block, g.weak]),
+                TYPE: "setTrap",
+            },
+        },
+    ],
+};
